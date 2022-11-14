@@ -18,11 +18,11 @@
     <tag name="ADJ">3904</tag><!-- 無い, 良い, 多い, 高い, 美味しい, 同じ, 大きな, 可能, 大きい, 少ない -->
     <tag name="ADP">41119</tag><!-- の, は, に, を, が, と, で, も, から, や -->
     <tag name="ADV">2419</tag><!-- 迚も, こう, 特に, どう, 又, 可成, 初めて, 良く, 直ぐ, 少し -->
-    <tag name="AUX">18388</tag><!-- た, だ, ている, れる, ます, である, です, ない, られる, のだ -->
+    <tag name="AUX">18393</tag><!-- た, だ, ている, れる, ます, である, です, ない, られる, のだ -->
     <tag name="CCONJ">819</tag><!-- 又, 然し, 及び, そして, 更に, 猶, 但し, 一方, 唯, 或いは -->
     <tag name="DET">987</tag><!-- 其の, 此の, 或る, 何の, 彼の, あらゆる, 我が, とある -->
     <tag name="INTJ">15</tag><!-- _, あっ, OH, あり, いえ, イエイ, 否, 否々, 御めでとう, 御免為さい -->
-    <tag name="NOUN">35045</tag><!-- 事, 物, 為, 後, 他, 様, 中, 人, 時, 場合 -->
+    <tag name="NOUN">35040</tag><!-- 事, 物, 為, 後, 他, 様, 中, 人, 時, 場合 -->
     <tag name="NUM">3118</tag><!-- 一つ, 1月, 8月, 4月, 12月, 9月, 7月, 3月, 6月, 10月 -->
     <tag name="PART">669</tag><!-- か, たり, など, ね, よ, な, だけ, ほど, まで, ばかり -->
     <tag name="PRON">1050</tag><!-- 此れ, 其れ, 此処, 私, 彼, 何, 此方, 其処, 何れ, 何時 -->
@@ -38,26 +38,27 @@
     <feat name="Polarity" value="Neg" upos="AUX,NOUN">866</feat><!-- ない, ず, ん, なかっ, なく, なけれ, なければならない, ぬ, なし, ざるをえない -->
   </feats>
   <!-- Statistics of universal dependency relations. -->
-  <deps unique="24">
-    <dep name="acl">6988</dep>
-    <dep name="advcl">7163</dep>
+  <deps unique="25">
+    <dep name="acl">6966</dep>
+    <dep name="advcl">7186</dep>
     <dep name="advmod">2376</dep>
     <dep name="amod">175</dep>
-    <dep name="aux">17158</dep>
-    <dep name="case">41114</dep>
+    <dep name="aux">17151</dep>
+    <dep name="case">41109</dep>
     <dep name="cc">819</dep>
     <dep name="ccomp">361</dep>
     <dep name="compound">2126</dep>
-    <dep name="cop">1213</dep>
-    <dep name="csubj">161</dep>
-    <dep name="dep">52</dep>
+    <dep name="cop">1212</dep>
+    <dep name="csubj">158</dep>
+    <dep name="csubj:outer">8</dep>
+    <dep name="dep">77</dep>
     <dep name="det">987</dep>
     <dep name="discourse">13</dep>
-    <dep name="dislocated">299</dep>
-    <dep name="fixed">15</dep>
-    <dep name="mark">3897</dep>
-    <dep name="nmod">12162</dep>
-    <dep name="nsubj">8217</dep>
+    <dep name="fixed">36</dep>
+    <dep name="mark">3868</dep>
+    <dep name="nmod">12158</dep>
+    <dep name="nsubj">8012</dep>
+    <dep name="nsubj:outer">498</dep>
     <dep name="nummod">589</dep>
     <dep name="obj">5307</dep>
     <dep name="obl">12011</dep>
