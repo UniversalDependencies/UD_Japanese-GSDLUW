@@ -1,11 +1,11 @@
 Running the following version of UD tools:
-commit c1984d97df0ecdcc1b50fbeaa8c96419c6321432
+commit ecbbdff44b15c9b6de4a691e3499c1286459ab2e
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Sun Nov 10 10:33:45 2024 +0100
+Date:   Fri May 9 21:07:42 2025 +0200
 Evaluating the following revision of UD_Japanese-GSDLUW:
-commit 981122262125d98e223da3bbec06bdf03429d13f
-Merge: 7f3f98c 392bd3e
+commit d0683d8f3bd17c6997e229d5d4f2388d91ce834a
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
+Date:   Mon Nov 11 16:04:25 2024 +0100
 Size: counted 150243 of 150243 words (nodes).
 Size: min(0, log((N/1000)**2)) = 10.0245079666234.
 Size: maximum value 13.815511 is for 1000000 words or more.
@@ -20,25 +20,40 @@ Features: source of annotation (from README) factor is 0.4.
 Universal relations: 23 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.8.
 Udapi:
-               TOTAL      21065
-Udapi: found 21065 bugs.
+               TOTAL      21063
+Udapi: found 21063 bugs.
 Udapi: worst expected case (threshold) is one bug per 10 words. There are 150243 words.
-Genres: found 2 out of 17 known.
+Genres: found 2 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang ja --max-err=10 UD_Japanese-GSDLUW/ja_gsdluw-ud-dev.conllu
+[Line 9875 Sent dev-s430 Node 6]: [L3 Warning fixed-without-extpos] Fixed expression 'よう でし た' does not have the 'ExtPos' feature
+[Line 10716 Sent dev-s468 Node 14]: [L3 Warning fixed-without-extpos] Fixed expression 'よう です' does not have the 'ExtPos' feature
+Warnings: 2
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ja --max-err=10 UD_Japanese-GSDLUW/ja_gsdluw-ud-test.conllu
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ja --max-err=10 UD_Japanese-GSDLUW/ja_gsdluw-ud-train.conllu
+[Line 4204 Sent train-s190 Node 13]: [L3 Warning fixed-without-extpos] Fixed expression '事もあり ます が' does not have the 'ExtPos' feature
+[Line 18803 Sent train-s834 Node 17]: [L3 Warning fixed-without-extpos] Fixed expression 'よう です' does not have the 'ExtPos' feature
+[Line 32927 Sent train-s1499 Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'さらに は' does not have the 'ExtPos' feature
+[Line 39282 Sent train-s1799 Node 62]: [L3 Warning fixed-without-extpos] Fixed expression '事が出来 まし た' does not have the 'ExtPos' feature
+[Line 46330 Sent train-s2129 Node 14]: [L3 Warning fixed-without-extpos] Fixed expression 'よう です' does not have the 'ExtPos' feature
+[Line 52079 Sent train-s2387 Node 10]: [L3 Warning fixed-without-extpos] Fixed expression 'どの くらい の' does not have the 'ExtPos' feature
+[Line 54529 Sent train-s2496 Node 12]: [L3 Warning fixed-without-extpos] Fixed expression '事があり ませ ん でし た' does not have the 'ExtPos' feature
+[Line 62634 Sent train-s2872 Node 1]: [L3 Warning fixed-without-extpos] Fixed expression 'と はいっても' does not have the 'ExtPos' feature
+[Line 70834 Sent train-s3245 Node 5]: [L3 Warning fixed-without-extpos] Fixed expression 'よう です' does not have the 'ExtPos' feature
+[Line 75576 Sent train-s3449 Node 7]: [L3 Warning fixed-without-extpos] Fixed expression '割に は' does not have the 'ExtPos' feature
+...suppressing further errors regarding Warning
+Warnings: 25
 *** PASSED ***
 Validity: 1
 (weight=0.0769230769230769) * (score{features}=0.12) = 0.00923076923076923
-(weight=0.0769230769230769) * (score{genres}=0.117647058823529) = 0.00904977375565611
+(weight=0.0769230769230769) * (score{genres}=0.111111111111111) = 0.00854700854700855
 (weight=0.0769230769230769) * (score{lemmas}=0.8) = 0.0615384615384615
 (weight=0.256410256410256) * (score{size}=0.72559808228329) = 0.186050790329049
 (weight=0.0512820512820513) * (score{split}=0.67) = 0.0343589743589744
 (weight=0.0769230769230769) * (score{tags}=0.8) = 0.0615384615384615
 (weight=0.307692307692308) * (score{udapi}=0.01) = 0.00307692307692308
 (weight=0.0769230769230769) * (score{udeprels}=0.497297297297297) = 0.0382536382536383
-(TOTAL score=0.403097792081933) * (availability=1) * (validity=1) = 0.403097792081933
+(TOTAL score=0.402595026873285) * (availability=1) * (validity=1) = 0.402595026873285
 STARS = 2
-UD_Japanese-GSDLUW	0.403097792081933	2
+UD_Japanese-GSDLUW	0.402595026873285	2
