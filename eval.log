@@ -1,10 +1,10 @@
 Running the following version of UD tools:
-commit 26e6c87a2f518322d15901a351199b6be6569062
+commit b39dc4111bb13658bc0c204b48bb78b492e45d2b
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
-Date:   Fri Nov 7 15:39:58 2025 +0100
+Date:   Tue May 5 17:01:41 2026 +0200
 Evaluating the following revision of UD_Japanese-GSDLUW:
-commit a09e6ca4349c607891fef4ece4409fbf9f0ec708
-Merge: d38f829 de8cbe8
+commit b2029c6726ea7aeea468ac6d80339b56d458ea75
+Merge: c5478bc 71fd686
 Author: Dan Zeman <zeman@ufal.mff.cuni.cz>
 CoNLL-U data file regular expression = '(.+)-ud-(train|dev|test)\.conllu'
 Language-treebank code (from CoNLL-U file name) = 'ja_gsdluw'
@@ -21,50 +21,63 @@ Universal POS tags: 17 out of 17 found in the corpus.
 Universal POS tags: source of annotation (from README) factor is 0.8.
 Features: 866 out of 150243 total words have one or more features.
 Features: source of annotation (from README) factor is 0.4.
-Universal relations: 24 out of 37 found in the corpus.
+Universal relations: 25 out of 37 found in the corpus.
 Universal relations: source of annotation (from README) factor is 0.8.
 Genres: found 2 out of 18 known.
 /net/work/people/zeman/unidep/tools/validate.py --lang ja --max-err=10 UD_Japanese-GSDLUW/ja_gsdluw-ud-dev.conllu
-[Line 7 Sent dev-s1]: [L3 Warning obl-should-be-nmod] The parent (node [5] '変更後') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 63 Sent dev-s5]: [L3 Warning obl-should-be-nmod] The parent (node [5] 'とも') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 155 Sent dev-s7]: [L3 Warning obl-should-be-nmod] The parent (node [30] '値') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 202 Sent dev-s9]: [L3 Warning obl-should-be-nmod] The parent (node [5] '彩') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 367 Sent dev-s14]: [L3 Warning obl-should-be-nmod] The parent (node [46] '非難') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 535 Sent dev-s21]: [L3 Warning obl-should-be-nmod] The parent (node [18] 'アンドレ・アガシ') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 600 Sent dev-s24]: [L3 Warning obl-should-be-nmod] The parent (node [17] '本音') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 603 Sent dev-s24]: [L3 Warning obl-should-be-nmod] The parent (node [15] '幹部') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 27 Sent dev-s2]: [L3 Warning pron-det-without-prontype] The word '私' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 137 Sent dev-s7]: [L3 Warning pron-det-without-prontype] The word 'これ' is tagged 'PRON' but it lacks the 'PronType' feature
-...suppressing further errors regarding Warning
-Warnings: 185
+[Line 27 Sent dev-s2]: [L3 WARNING pron-det-without-prontype] The word '私' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 137 Sent dev-s7]: [L3 WARNING pron-det-without-prontype] The word 'これ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 206 Sent dev-s9]: [L3 WARNING pron-det-without-prontype] The word 'そんな' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 298 Sent dev-s12]: [L3 WARNING pron-det-without-prontype] The word 'そこ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 395 Sent dev-s15]: [L3 WARNING pron-det-without-prontype] The word 'この' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 439 Sent dev-s17]: [L3 WARNING pron-det-without-prontype] The word 'その' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 451 Sent dev-s17]: [L3 WARNING pron-det-without-prontype] The word 'いずれ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 760 Sent dev-s33]: [L3 WARNING pron-det-without-prontype] The word 'ここ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 889 Sent dev-s38]: [L3 WARNING pron-det-without-prontype] The word 'これ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 973 Sent dev-s40]: [L3 WARNING pron-det-without-prontype] The word 'この' is tagged 'DET' but it lacks the 'PronType' feature
+...suppressing further messages regarding WARNING/MORPHO
+[Line 10302 Sent dev-s430]: [L3 WARNING fixed-without-extpos] Fixed expression 'よう でし た' does not have the 'ExtPos' feature
+[Line 11180 Sent dev-s468]: [L3 WARNING fixed-without-extpos] Fixed expression 'よう です' does not have the 'ExtPos' feature
+Warnings: 128
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ja --max-err=10 UD_Japanese-GSDLUW/ja_gsdluw-ud-test.conllu
-[Line 5 Sent test-s1]: [L3 Warning pron-det-without-prontype] The word 'これ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 124 Sent test-s7]: [L3 Warning pron-det-without-prontype] The word 'それ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 128 Sent test-s7]: [L3 Warning pron-det-without-prontype] The word '私' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 224 Sent test-s11]: [L3 Warning pron-det-without-prontype] The word 'その' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 225 Sent test-s11]: [L3 Warning obl-should-be-nmod] The parent (node [22] '前提') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 268 Sent test-s14]: [L3 Warning pron-det-without-prontype] The word 'その' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 272 Sent test-s14]: [L3 Warning pron-det-without-prontype] The word '何' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 286 Sent test-s15]: [L3 Warning pron-det-without-prontype] The word 'この' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 313 Sent test-s17]: [L3 Warning pron-det-without-prontype] The word 'なん' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 316 Sent test-s17]: [L3 Warning pron-det-without-prontype] The word 'なん' is tagged 'PRON' but it lacks the 'PronType' feature
-...suppressing further errors regarding Warning
-Warnings: 205
+[Line 5 Sent test-s1]: [L3 WARNING pron-det-without-prontype] The word 'これ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 124 Sent test-s7]: [L3 WARNING pron-det-without-prontype] The word 'それ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 128 Sent test-s7]: [L3 WARNING pron-det-without-prontype] The word '私' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 224 Sent test-s11]: [L3 WARNING pron-det-without-prontype] The word 'その' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 268 Sent test-s14]: [L3 WARNING pron-det-without-prontype] The word 'その' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 272 Sent test-s14]: [L3 WARNING pron-det-without-prontype] The word '何' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 286 Sent test-s15]: [L3 WARNING pron-det-without-prontype] The word 'この' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 313 Sent test-s17]: [L3 WARNING pron-det-without-prontype] The word 'なん' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 316 Sent test-s17]: [L3 WARNING pron-det-without-prontype] The word 'なん' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 321 Sent test-s17]: [L3 WARNING pron-det-without-prontype] The word 'わが' is tagged 'DET' but it lacks the 'PronType' feature
+...suppressing further messages regarding WARNING/MORPHO
+Warnings: 164
 *** PASSED ***
 /net/work/people/zeman/unidep/tools/validate.py --lang ja --max-err=10 UD_Japanese-GSDLUW/ja_gsdluw-ud-train.conllu
-[Line 154 Sent train-s7]: [L3 Warning obl-should-be-nmod] The parent (node [8] '百子') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 167 Sent train-s7]: [L3 Warning obl-should-be-nmod] The parent (node [21] 'とも') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 31 Sent train-s1]: [L3 Warning pron-det-without-prontype] The word 'その' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 36 Sent train-s1]: [L3 Warning pron-det-without-prontype] The word 'この' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 49 Sent train-s2]: [L3 Warning pron-det-without-prontype] The word 'そんな' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 105 Sent train-s4]: [L3 Warning pron-det-without-prontype] The word 'これ' is tagged 'PRON' but it lacks the 'PronType' feature
-[Line 153 Sent train-s7]: [L3 Warning pron-det-without-prontype] The word 'その' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 252 Sent train-s10]: [L3 Warning pron-det-without-prontype] The word 'その' is tagged 'DET' but it lacks the 'PronType' feature
-[Line 494 Sent train-s19]: [L3 Warning obl-should-be-nmod] The parent (node [4] 'バルティルド') is a nominal (and not a predicate), hence the relation should be 'nmod', not 'obl'.
-[Line 515 Sent train-s20]: [L3 Warning pron-det-without-prontype] The word 'その' is tagged 'DET' but it lacks the 'PronType' feature
-...suppressing further errors regarding Warning
-Warnings: 2463
+[Line 31 Sent train-s1]: [L3 WARNING pron-det-without-prontype] The word 'その' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 36 Sent train-s1]: [L3 WARNING pron-det-without-prontype] The word 'この' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 49 Sent train-s2]: [L3 WARNING pron-det-without-prontype] The word 'そんな' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 105 Sent train-s4]: [L3 WARNING pron-det-without-prontype] The word 'これ' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 153 Sent train-s7]: [L3 WARNING pron-det-without-prontype] The word 'その' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 252 Sent train-s10]: [L3 WARNING pron-det-without-prontype] The word 'その' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 515 Sent train-s20]: [L3 WARNING pron-det-without-prontype] The word 'その' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 575 Sent train-s22]: [L3 WARNING pron-det-without-prontype] The word 'その' is tagged 'DET' but it lacks the 'PronType' feature
+[Line 619 Sent train-s24]: [L3 WARNING pron-det-without-prontype] The word 'ほんの' is tagged 'PRON' but it lacks the 'PronType' feature
+[Line 814 Sent train-s33]: [L3 WARNING pron-det-without-prontype] The word 'これ' is tagged 'PRON' but it lacks the 'PronType' feature
+...suppressing further messages regarding WARNING/MORPHO
+[Line 4393 Sent train-s190]: [L3 WARNING fixed-without-extpos] Fixed expression '事もあり ます が' does not have the 'ExtPos' feature
+[Line 19631 Sent train-s834]: [L3 WARNING fixed-without-extpos] Fixed expression 'よう です' does not have the 'ExtPos' feature
+[Line 34413 Sent train-s1499]: [L3 WARNING fixed-without-extpos] Fixed expression 'さらに は' does not have the 'ExtPos' feature
+[Line 41065 Sent train-s1799]: [L3 WARNING fixed-without-extpos] Fixed expression '事が出来 まし た' does not have the 'ExtPos' feature
+[Line 48439 Sent train-s2129]: [L3 WARNING fixed-without-extpos] Fixed expression 'よう です' does not have the 'ExtPos' feature
+[Line 54444 Sent train-s2387]: [L3 WARNING fixed-without-extpos] Fixed expression 'どの くらい の' does not have the 'ExtPos' feature
+[Line 57001 Sent train-s2496]: [L3 WARNING fixed-without-extpos] Fixed expression '事があり ませ ん でし た' does not have the 'ExtPos' feature
+[Line 65468 Sent train-s2872]: [L3 WARNING fixed-without-extpos] Fixed expression 'と はいっても' does not have the 'ExtPos' feature
+[Line 74034 Sent train-s3245]: [L3 WARNING fixed-without-extpos] Fixed expression 'よう です' does not have the 'ExtPos' feature
+[Line 78976 Sent train-s3449]: [L3 WARNING fixed-without-extpos] Fixed expression '割に は' does not have the 'ExtPos' feature
+...suppressing further messages regarding WARNING/SYNTAX
+Warnings: 1772
 *** PASSED ***
 Validity: 1
 (weight=0.111111111111111) * (score{features}=0.12) = 0.0133333333333333
@@ -73,7 +86,7 @@ Validity: 1
 (weight=0.37037037037037) * (score{size}=0.72559808228329) = 0.268740030475293
 (weight=0.0740740740740741) * (score{split}=0.67) = 0.0496296296296296
 (weight=0.111111111111111) * (score{tags}=0.8) = 0.0888888888888889
-(weight=0.111111111111111) * (score{udeprels}=0.518918918918919) = 0.0576576576576577
-(TOTAL score=0.579484107886037) * (availability=1) * (validity=1) = 0.579484107886037
+(weight=0.111111111111111) * (score{udeprels}=0.540540540540541) = 0.0600600600600601
+(TOTAL score=0.581886510288439) * (availability=1) * (validity=1) = 0.581886510288439
 STARS = 3
-UD_Japanese-GSDLUW	0.579484107886037	3
+UD_Japanese-GSDLUW	0.581886510288439	3
